@@ -1,0 +1,28 @@
+.Welcome
+{
+    font-size: 16px;
+}
+.coffee_machine
+{
+    width:261.67px;
+    height: 288.84px;
+}
+.text-coffee_machine
+{
+    font-size: 14px;
+}
+.flex-item12-coffee_machine
+{
+    display: flex;
+    justify-content: space-around;
+    align-content: end;
+    border: 0cap solid;
+    width: 35%;
+    height: 300px;
+    margin-top: 100px;
+    margin-left: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
