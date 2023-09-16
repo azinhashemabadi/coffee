@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/coffee/static/css/main.74b8054a.css",
+    "main.js": "/coffee/static/js/main.525e6ef2.js",
+    "static/js/787.3a3963b6.chunk.js": "/coffee/static/js/787.3a3963b6.chunk.js",
+    "static/media/waiter-making-coffee-3462715-2903816.png": "/coffee/static/media/waiter-making-coffee-3462715-2903816.90acb30bd060b49c312e.png",
+    "static/media/man_with_coffee.png": "/coffee/static/media/man_with_coffee.036bc6cf2cbf49d32cb4.png",
+    "static/media/coffee_machine.png": "/coffee/static/media/coffee_machine.7879fb0aab1dc2fafd30.png",
+    "static/media/coffee_shop.png": "/coffee/static/media/coffee_shop.20928d0121497479aa8b.png",
+    "static/media/shake.png": "/coffee/static/media/shake.835dbdc24e9fb3ba5c70.png",
+    "static/media/cup_.png": "/coffee/static/media/cup_.fdc7fd1b63fa7313bcc3.png",
+    "static/media/logo.png": "/coffee/static/media/logo.d65e4fbb3cd023486bc9.png",
+    "static/media/coffee_been.png": "/coffee/static/media/coffee_been.4a29b532641b9bfc6304.png",
+    "static/media/Hot_chocolate.png": "/coffee/static/media/Hot_chocolate.ba9b726bcd7a7afc7764.png",
+    "static/media/latte.png": "/coffee/static/media/latte.b94a8e414a53a7c34087.png",
+    "static/media/percentage.png": "/coffee/static/media/percentage.e6f68b5f84949f03f378.png",
+    "static/media/logo.svg": "/coffee/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/coffee/index.html",
+    "main.74b8054a.css.map": "/coffee/static/css/main.74b8054a.css.map",
+    "main.525e6ef2.js.map": "/coffee/static/js/main.525e6ef2.js.map",
+    "787.3a3963b6.chunk.js.map": "/coffee/static/js/787.3a3963b6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.74b8054a.css",
+    "static/js/main.525e6ef2.js"
+  ]
+}
