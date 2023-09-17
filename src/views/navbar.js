@@ -1,59 +1,42 @@
 import React from "react";
 import './navbar.css';
-import { useEffect } from 'react';
+import { useRef } from 'react';
+import './Swiper.js';
+import Swiper from './Swiper.js';
+import './Journey.js';
+import Journey from "./Journey.js";
+import './Home.js';
+import Home from "./Home.js";
+import './waiterMakingCoffee';
+import WaiterMakingCoffee from "./waiterMakingCoffee";
 const Navbar = () => {
-    useEffect(() => {
-        const handleLinkClick = (event) => {
-          event.preventDefault();
-          const targetId = event.target.getAttribute('href').substring(1);
-          const targetElement = document.getElementById(targetId);
-    
-          if (targetElement) {
-            targetElement.scrollIntoView({
-              behavior: 'smooth',
-              block: 'start',
-            });
-          }
-        };
-    
-        const links = document.querySelectorAll('a[href^="#"]');
-        links.forEach((link) => {
-          link.addEventListener('click', handleLinkClick);
-        });
-    
-        return () => {
-          // Remove event listeners when component unmounts
-          links.forEach((link) => {
-            link.removeEventListener('click', handleLinkClick);
-          });
-        };
-      }, []);
-    // const [FontColor,setFontColor] = React.useState(false)
-    // const handleClick1 = () => {
-    //     setFontColor(!FontColor)
-    // }
-    // const handleClick2 = () => {
-    //     setFontColor(!FontColor)
-    // }
-    // const handleClick3 = () => {
-    //     setFontColor(!FontColor)
-    // }
-    // const handleClick4 = () => {
-    //     setFontColor(!FontColor)
-    // }
-    // const goTo = () => {
+    const swiperRef = useRef(null);
+    const scrollToSwiper = () => {
+      if (swiperRef.current) {
+        swiperRef.current.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
 
-    // }
-    // const [currentComponent, setCurrentComponent] = useState(null);
-    // const loadComponent = (componentName) => {
-    //     import(`./${componentName}.js`)
-    //       .then((module) => setCurrentComponent(module.default))
-    //   };
-    // const linkStyle ={
-    //     color: FontColor ? "#CF9A72" : "black",
-    //     textDecoration: 'none',
-    //     cursor: 'pointer',
-    // }
+    const journeyRef = useRef(null);
+    const scrollToJourney = () => {
+      if (swiperRef.current) {
+        journeyRef.current.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
+
+    const homeRef = useRef(null);
+    const scrollToHome = () => {
+      if (swiperRef.current) {
+        homeRef.current.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
+
+    const ReserveRef = useRef(null);
+    const scrollToReserve = () => {
+      if (swiperRef.current) {
+        ReserveRef.current.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
     return (
         <div>
             <div className="flex">
@@ -80,34 +63,46 @@ const Navbar = () => {
                     
                       
                         <div className="flex-item3" flex-grow="2">
-                        <li><a href="#Home" className="b">
+                        <a onClick={scrollToHome} className="b">
                         Home
-                        </a></li>
+                        </a>
                         <br/>
                     </div>  
                     <div className="flex-item4" flex-grow="2" >
-                        <li><a href="#Journey" className="b"  >
+                        <a onClick={scrollToJourney} className="b"  >
                         Journey
-                        </a></li>
+                        </a>
                         <br />
                     </div>
                     <div className="flex-item5" flex-grow="2" >  
-                        <li><a href="#waiterMakingCoffee" className="b" >
+                        <a onClick={scrollToReserve} className="b" >
                         Reserve
-                        </a></li>
+                        </a>
                         <br />
                     </div>
-                    <div className="flex-item6" flex-grow="2" >  
-                        <li><a href="#Swiper" className="b">
-                        Products
-                        </a></li>
+                    <div className="flex-item6" flex-grow="2" > 
+                      <div>
+                        <a onClick={scrollToSwiper} >Products</a>
+                      </div>
                     </div>
-                    
-               
                 </div>     
             </div>
+            <div className="content">
+                <div ref={homeRef}>
+                  {<Home></Home>}
+                </div>
+                <div ref={journeyRef}>
+                  {<Journey></Journey>}
+                </div>
+                <div ref={ReserveRef}>
+                  {<WaiterMakingCoffee></WaiterMakingCoffee>}
+                </div>
+                <div ref={swiperRef}>
+                  {<Swiper></Swiper>}
+                </div>
+            </div> 
         </div>
         
     )
 }
-export default Navbar
+export default Navbar;

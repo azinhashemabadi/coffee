@@ -8,6 +8,9 @@
     display: flex;
     justify-content: space-around;
     align-content: end;
+    list-style: none;
+    align-items: center;
+    
 }
 .flex-item12
 {
@@ -20,6 +23,7 @@
     display: flex;
     justify-content: space-around;
     align-content: end;
+    text-decoration: none;
 }
 .flex-item4,.flex-item5,.flex-item6,.flex-item3
 {

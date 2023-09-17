@@ -19,6 +19,7 @@ const Swiper = () =>{
     // ]
     return(
         <div>
+            <div className="all_center">
             <h1 className="Also">Also we have product</h1>
             {/* <Swiper spaceBetween={10} slidesPerView={1} pagination={{ clickable: true }}>
                 {items.map((item) => (
@@ -50,6 +51,7 @@ const Swiper = () =>{
                     <h1 className="Best">$55</h1>
                     <h2 className="text">Cappuccino</h2>
                 </div>
+            </div>
             </div>
         </div>
     )

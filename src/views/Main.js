@@ -13,31 +13,20 @@ import Navbar from "./navbar.js";
 import WaiterMakingCoffee from "./waiterMakingCoffee.js";
 import Footer from "./footer.js";
 import ManWithCoffee from "./manWithCoffee.js";
+import { Link, Element } from 'react-scroll';
+
 const Main = () => {
+    
   return (
     <div>
         <div>
           <Navbar>
-          
+            
           </Navbar>
+          
+
         </div>
         
-        <div>
-          <Home>
-          </Home>
-        </div>
-        <div>
-          <Journey>
-          </Journey>
-        </div>
-        <div>
-          <WaiterMakingCoffee>
-          </WaiterMakingCoffee>
-        </div>
-        <div>
-          <Swiper>
-          </Swiper>
-        </div>
         <div>
           <ManWithCoffee>
           </ManWithCoffee>
