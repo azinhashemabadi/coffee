@@ -16,7 +16,7 @@ const ManWithCoffee = () => {
     }
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log('Form Data:', state);
+        console.log(state);
     };
     return (
         <div>
